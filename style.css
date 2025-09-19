@@ -1,0 +1,51 @@
+footer{
+    width: 100%;
+    height: auto;
+    background: #282828;
+    padding-bottom: 20px;
+}
+
+.company-heading{
+    margin-top: 30px;
+    font-size: 38px;
+    color: #00a991;
+    font-weight: bold;
+}
+
+.links-heading{
+    margin-top: 30px;
+    font-size: 38px;
+    color: #00a991;
+    font-weight: bold;
+}
+
+.about{
+    width: 80%;
+    margin-top: 5px;
+    color: aliceblue;
+}
+
+.square{
+    width: 100%;
+    padding-top: 20%; 
+    position: relative;
+}
+
+.link-list{
+    width: 80%;
+    margin-top: 5px;
+    color: aliceblue;
+}
+
+.socials-heading{
+    margin-top: 30px;
+    font-size: 38px;
+    color: #00a991;
+    font-weight: bold;
+}
+
+.socials-list{
+    width: 80%;
+    margin-top: 5px;
+    color: aliceblue;
+}
