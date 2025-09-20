@@ -1,51 +1,234 @@
-footer{
+body {
+    display: grid;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-color: #f1f3f4;
+    font-family: poppins;
+
+       
+}
+/* 
+header{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: poppins;
+    list-style: none;
+    background-color: #0D2F66;
+} */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 70px;
+    margin-bottom: 0;
+    margin-top: 20px;
+ 
+}
+
+
+
+nav  ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav  ul  a{
+    color: #212D33;
+    font-size: 1.2rem;
+    margin-left: 5rem;
+}
+
+.hero {
+    height: 500px;
+    padding: 50px;
+    /* color: #f1f3f4; */
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+
+
+}
+
+.hero-bg{
+    height: 45%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url(https://www.shutterstock.com/image-photo/portrait-happy-male-female-janitors-600nw-1153862407.jpg);
+    filter: blur(1px);
+    z-index: -10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+}
+
+.hero-text{
+    position: absolute;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    width: 600px;
+    height: 290px;
+    z-index: -1;
+    margin-top: 280px;
+    justify-content: start;
+    align-items: start;
+    padding-left: 10px;
+    padding-right: 50px;
+    filter: blur(px);
+
+}
+
+
+.hero-text > h1{
+    font-size: 65px;
+    margin-top: 10px;
+    font-weight: 1000px;
+    color: #000000;
+    text-align: start;
+}
+
+.hero-text > p{
+
+    padding-left: 0;
+    color: #212D33;
+    text-align: start;
+    font-size: 1.2rem;
+}
+
+.hero-text > button{
+    padding:19px 30px ;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: black;
+    cursor: pointer;
+    color: black;
+    background-color: #52C6F7;
+}
+
+
+.footer-container{
     width: 100%;
     height: auto;
-    background: #282828;
-    padding-bottom: 20px;
+    background:#000000;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: aliceblue;
+
 }
 
-.company-heading{
+.footer-container > *{
+    flex: 1 100%;
+}
+
+
+
+h2{
     margin-top: 30px;
     font-size: 38px;
-    color: #00a991;
+    color: #52C6F7;
     font-weight: bold;
 }
 
-.links-heading{
-    margin-top: 30px;
-    font-size: 38px;
-    color: #00a991;
-    font-weight: bold;
-}
 
 .about{
     width: 80%;
     margin-top: 5px;
-    color: aliceblue;
+    color: rgb(142, 168, 191);
 }
 
-.square{
-    width: 100%;
-    padding-top: 20%; 
-    position: relative;
+.footer-left{
+    width: 300px;
+    padding-top: 10px; 
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 20px;
+    margin-right: 1.25em;
+    margin-bottom: 2em;
 }
+
+.footer-left > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.footer-right{
+    width: 200px;
+    padding-top: 10px;
+    position: relative;
+    margin-left: 70px;
+
+}
+
+.square-right > li{
+    list-style: none;
+
+}
+
+.socials-list {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+ 
+}
+
+.socials-list > a{
+    background: #FFFFFF;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: #44A4CD;
+    font-size: 25px;
+    padding-left:2px;
+    transition: all 0.2s ease;
+    
+}
+
 
 .link-list{
+    color: rgb(142, 168, 191);
+    gap: 15px;
+   
+}
+
+.rights-reserved{
     width: 80%;
     margin-top: 5px;
     color: aliceblue;
+    padding-top: 50px;
+    text-align: center;
 }
 
-.socials-heading{
-    margin-top: 30px;
-    font-size: 38px;
-    color: #00a991;
-    font-weight: bold;
+@media screen and (min-width: 600px){
+    .footer-right > *{
+        flex: 1;
+    }
+
+    .footer-left{
+        flex: 1 0px;
+    }
+    .footer-right{
+        flex: 2 0px;
+    }
 }
 
-.socials-list{
-    width: 80%;
-    margin-top: 5px;
-    color: aliceblue;
+@media (nax-width: 600px){
+    .footer-container{
+        padding: 15px;
+    }
+    body{
+        font-size: 20px;
+    }
 }
