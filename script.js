@@ -29,7 +29,7 @@ function scroller() {
     window.onscroll = () =>{
         scrollBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
     } 
-        // scrollBtn.classList.toggle('show', scroll);
+        
        
    
 }
