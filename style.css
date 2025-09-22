@@ -1,117 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #52C6F7;
+    --primary-color-dark: #212D33;
+    --text-dark: #3E494D;
+    --white: #ffffff;
+}
+
 body {
-    display: grid;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    background-color: #f1f3f4;
-    font-family: poppins;
-
-       
-}
-/* 
-header{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: poppins;
-    list-style: none;
-    background-color: #0D2F66;
-} */
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-left: 70px;
-    margin-bottom: 0;
-    margin-top: 20px;
- 
+  
+   line-height: 1.6;
+   margin: 0;     
 }
 
-
-
-nav  ul {
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-}
-
-nav  ul  a{
-    color: #212D33;
-    font-size: 1.2rem;
-    margin-left: 5rem;
-}
 
 .hero {
-    height: 500px;
-    padding: 50px;
-    /* color: #f1f3f4; */
-    text-align: center;
+    padding: 2rem;
+    align-items: center;
     display: flex;
+    justify-content: space-between;
+    position: relative;
     overflow: hidden;
-
-
-}
-
-.hero-bg{
-    height: 45%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-image: url(https://www.shutterstock.com/image-photo/portrait-happy-male-female-janitors-600nw-1153862407.jpg);
-    filter: blur(1px);
-    z-index: -10;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(4,9,30, 0.7), rgba(4,9,30,0.7)), url("/assets/static/148192.jpg");
     background-position: center;
- 
+    background-repeat: no-repeat;
+    min-height: 50%;
+    width: 100%;
 }
+
 
 .hero-text{
     position: absolute;
-    border-radius: 30px;
-    background-color: whitesmoke;
-    width: 600px;
-    height: 290px;
-    z-index: -1;
-    margin-top: 280px;
-    justify-content: start;
-    align-items: start;
-    padding-left: 10px;
-    padding-right: 50px;
-    filter: blur(px);
+    color: var(--white);
+    z-index: 2;
+    padding: 2rem;
+    max-width: 600px;
+    text-align: left;
+    margin: 0 auto;
+    border-radius: 1rem;
 
 }
 
 
 .hero-text > h1{
-    font-size: 65px;
-    margin-top: 10px;
+    font-size: 70px;
     font-weight: 1000px;
-    color: #000000;
+    color: var(--white);
     text-align: start;
 }
 
 .hero-text > p{
-
+    margin: 10px 0 40px;
     padding-left: 0;
-    color: #212D33;
+    color: var(--white);
     text-align: start;
     font-size: 1.2rem;
 }
 
-.hero-text > button{
-    padding:19px 30px ;
-    font-size: 1.3rem;
-    border-radius: 10px;
-    border: black;
+.hero-btn{
+  
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 19px 39px;
+    font-size: 1.2rem;
+    background: transparent;
+    position: relative;
     cursor: pointer;
-    color: black;
-    background-color: #52C6F7;
+
 }
 
+.hero-btn:hover{
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+    transition: 1s;
+}
+
+
+.about-2000{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.about-2000 h1{
+        font-size: 36px;
+            font-weight: 600;
+}
+
+.about-2000 p{
+    color: var(--primary-color-dark);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 1.2rem;
+
+}
+
+ 
+
+.other-services{
+    
+}
+
+.other-services h1{
+    font-size: 36px;
+    font-weight: 600;
+    width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+}
+
+
+.features{
+   
+}
+
+.features h1{
+    font-size: 36px;
+    font-weight: 600;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+
+
+.reviews{
+    /* background-image: url("/assets/static/9cfb882e-db79-46ec-9f05-f2d581893990.jpeg"); */
+  
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+}
+
+.reviews-header{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.testimonial-container{
+    background-color: gainsboro;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+}
+
+.testimonial-container h1{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+
+}
+
+.testimonial-container p {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.testimo-left button{
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, var(--primary-color), var(--primary-color-dark));
+    color: var(--white);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.testimo-right{
+    display: grid;
+    gap: 2rem;
+
+}
+
+.testi-card{
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.testi-card img{
+    max-width: 75;
+    border-radius: 100%;
+}
+
+.card-content{
+    display: flex;
+    gap :1rem;
+}
+
+.card-content span i{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.card-content h4{
+    text-align: right;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
 
 .footer-container{
     width: 100%;
@@ -121,7 +232,7 @@ nav  ul  a{
     box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
-    padding: 50px;
+    padding-bottom: 50px;
     color: aliceblue;
 
 }
@@ -144,6 +255,7 @@ h2{
     width: 80%;
     margin-top: 5px;
     color: rgb(142, 168, 191);
+    position: relative;
 }
 
 .footer-left{
@@ -178,6 +290,7 @@ h2{
     display: flex;
     gap: 15px;
     align-items: center;
+    flex-direction: row wrap;
  
 }
 
@@ -193,6 +306,7 @@ h2{
     font-size: 25px;
     padding-left:2px;
     transition: all 0.2s ease;
+
     
 }
 
@@ -200,6 +314,7 @@ h2{
 .link-list{
     color: rgb(142, 168, 191);
     gap: 15px;
+   
    
 }
 
@@ -211,7 +326,7 @@ h2{
     text-align: center;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (max-width: 1200px){
     .footer-right > *{
         flex: 1;
     }
@@ -222,13 +337,64 @@ h2{
     .footer-right{
         flex: 2 0px;
     }
+
+    .testimonial-container{
+        gap: 3rem;
+    }
 }
 
-@media (nax-width: 600px){
+@media (min-width:  900px){
     .footer-container{
         padding: 15px;
     }
     body{
         font-size: 20px;
+    }
+
+    .testimonial-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .testimo-right{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 768px){
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text{
+        width: 100%;
+        max-width: none;
+        margin-top: 2rem;
+        padding: 1.5rem;
+    }
+
+    .hero-text>h1 {
+        font-size: 20px;
+        text-align: start;
+    }
+
+
+}
+
+
+@media (width < 750px){
+    .footer-container{
+        padding: 15px;
+    }
+    body{
+        font-size: 20px;
+    }
+
+    .testimonial-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .testimo-right{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
